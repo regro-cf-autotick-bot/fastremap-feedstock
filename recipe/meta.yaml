@@ -1,5 +1,5 @@
 {% set name = "fastremap" %}
-{% set version = "1.20.0" %}
+{% set version = "1.21.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/fastremap-{{ version }}.tar.gz
-  sha256: a64ffb4a99fd06c6f54f0ffbf48c73532fa238c429a4278b45767a55957468a0
+  sha256: 69c14cc36ffff240ad1f14dcb031f5419b022512e4c5000b648f325416f92551
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   build:
