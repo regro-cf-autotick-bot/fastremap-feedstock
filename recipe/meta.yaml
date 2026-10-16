@@ -21,6 +21,10 @@ requirements:
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler('cxx') }}
     - {{ stdlib("c") }}
+    - wheel
+    - meson-python        # provides the 'mesonpy' PEP 517 backend
+    - meson               # meson build system (native)
+    - ninja               # backend build tool used by meson
   host:
     - setuptools
     - numpy
