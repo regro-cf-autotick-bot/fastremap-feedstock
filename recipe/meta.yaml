@@ -22,7 +22,6 @@ requirements:
     - {{ compiler('cxx') }}
     - {{ stdlib("c") }}
     - wheel
-    - meson-python        # provides the 'mesonpy' PEP 517 backend
     - meson               # meson build system (native)
     - ninja               # backend build tool used by meson
   host:
@@ -32,6 +31,7 @@ requirements:
     - pip
     - python
     - cython
+    - meson-python >=0.15.0
   run:
     - python
     - packaging
